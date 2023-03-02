@@ -1,0 +1,228 @@
+body, html {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-weight: 600;	
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    min-width: 700px;
+}
+
+.highscore {
+	width: 100%;
+}
+
+.logo {
+    width:14vh;
+    position:fixed;
+    left: 10px;
+    top: 25px;
+}
+
+.wrapper {
+    display: inline-flex;
+    justify-content: center;
+    margin: 1vh 0;
+    padding: 1% 1% .5% 1%;
+    background: rgba(0, 0, 0, .65);
+    box-shadow: -1px 5px 5px rgba(0, 0, 0, .75);
+    width: 100%;
+}
+
+.countdown {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 45vh;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 10vh;
+    color: white;
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 45vh;
+    transform: translate(-50%, -50%);
+    background-color: lightsalmon;
+    text-align: center;
+    box-shadow: 0 0 20px black;
+    border: 1px solid grey;
+    border-radius: 20px;
+
+    h1 {
+        font-size: 150%;
+        margin: 40px 0 15px;
+    }	
+}
+
+.center {
+    margin: auto;
+    width: 75%;
+}
+
+button {
+    color: rgb(255, 255, 255);
+    background: rgb(230, 51, 42);
+    width: 175px;
+    height: 40px;
+    margin: 0 12px 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.blur {
+	filter: blur(4px);
+}
+
+.modal-close {
+    color: #000000;
+    line-height: 50px;
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+    &:hover {
+        color: black;
+    }
+}
+
+.detailsLeft {
+	width: 130px;
+	position: relative;
+	height: 90vh;
+	margin: 0% 2%;
+	text-align: right;
+	font-size: 16px;
+ }
+
+.highScores {
+	position: absolute;
+	bottom: 35px;
+	right: 0px;
+	line-height: 10px;
+	font-size: 14px;
+ }
+
+.detailsRight {
+	position: relative;
+	height: 90vh;
+	margin: 2% 2% 0% 2%;
+    text-align: left;
+}
+
+.next {
+	height: 15vh;
+	border: solid .1em white;
+}
+
+.controls {
+	position: absolute;
+	bottom: 50px;
+	left: 0px;
+  font-size: 12px;
+	line-height: 8px;
+}
+
+.blockparty {
+	height: 90vh;
+  border: solid .25em white;
+}
+
+@media (max-width: 920px), (max-height: 800px){
+    body, html {
+    font-size: 16px;
+    margin: 0px !important;
+    }
+    
+	.modal {
+        width: 25vw !important;
+        margin-top: 20vh !important;
+        border: solid .05em white;
+        box-shadow: -15px 20px 20px rgba(0, 0, 0, .75) !important;
+        min-width: 500px;
+    }
+    
+    .modal-content {
+        background: darkBlue;
+    }
+    
+    .modal-content .btn {
+        font-size: 14px !important;
+    }
+    
+    .modal-content input {
+        color: white;
+        font-size: 12px !important;
+        width: 50% !important;
+        text-align: center;
+    }
+    
+    .modal-content label {
+        font-size: 14px !important;
+    }
+	
+    .wrapper {
+        display: inline-flex;
+        justify-content: center;
+        background: rgba(0, 0, 0, .5) !important;
+        padding: 0% 0%;
+        background: rgba(0, 0, 0, .65);
+        margin: 0px !important;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .detailsLeft {
+			height: 80vh;
+			width: 110px;
+      margin: 5% 1% 0% 0%;
+			font-size: 14px;
+      }
+	
+	.score-title {
+		font-size: 14px;
+	}
+	
+		.highScores {
+			line-height: 8px;
+			font-size: 12px;
+  }
+    
+    .detailsRight {
+			height: 80vh;
+			width: 120px;
+			margin: 5% 0% 0% 1%;
+			text-align: left;
+    }
+	
+	  .next {
+      border: solid .1em white;
+			height: 12vh;
+    }
+
+    .controls {
+			line-height: 8px;
+			font-size: 12px;
+    }
+    
+    .blockparty {
+	    height: 85vh;
+			border: solid .25em white;
+			margin-bottom: 2%;
+			margin-top: 2%;
+    }
+		.footer {
+			font-size: 12px;
+		}
+}
