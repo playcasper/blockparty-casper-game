@@ -118,7 +118,7 @@ test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 Make sure that Express is installed on your system:
 
 ```
-cd blockparty-casper-game-main
+cd blockparty-casper-game
 npm install express
 ```
 
